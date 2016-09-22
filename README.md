@@ -62,7 +62,7 @@
 
 Clone this repo
 ```
-    git clone https://github.com/billba/bot-quickstart-js.git
+    git clone https://github.com/Microsoft-DXEIP/bot-quickstart-js.git
 ```
 Install Node modules
 ```
@@ -77,11 +77,11 @@ We will be adding these values shortly.
 
 Clone this repo
 ```
-    git clone https://github.com/kabirkhan/bot-quickstart-.NET.git
+    git clone https://github.com/Microsoft-DXEIP/bot-quickstart-NET.git
 ```
 
 ### You can also find these repositories by following the links below.
-### [NodeJS Repsitory](https://github.com/billba/bot-quickstart-js) | [.NET Repository](https://github.com/kabirkhan/bot-quickstart-.NET)
+### [NodeJS Repsitory](https://github.com/Microsoft-DXEIP/bot-quickstart-js) | [.NET Repository](https://github.com/Microsoft-DXEIP/bot-quickstart-NET)
 
 
 ### **2. Head over to <https://luis.ai> and sign up for a new account.**
