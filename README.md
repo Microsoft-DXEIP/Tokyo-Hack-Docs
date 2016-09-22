@@ -84,9 +84,9 @@ Clone this repo
 ### [NodeJS Repsitory](https://github.com/Microsoft-DXEIP/bot-quickstart-js) | [.NET Repository](https://github.com/Microsoft-DXEIP/bot-quickstart-NET)
 
 
-### **2. Head over to <https://luis.ai> and sign up for a new account.**
+### **2. In your favorite browser, go to <https://luis.ai> and sign up for a new account.**
 
-### **3. Under the MyApplications tab, select Cortana Pre-Built App.** 
+### **3. After signing up, go to the My Applications Tab of the website and click on Cortana Pre-Built Application and choose a language to continue with.** 
 
 ### **4. A window will pop up at this point.**
 * **NodeJS**:
@@ -99,7 +99,7 @@ Clone this repo
 
     
 * **.NET**: 
-    1. Copy the id and subscription key from the url in this popup window . This should look like (&id=YOUR_ID) and (&subscription_key=YOUR_KEY)
+    1. Copy the id and subscription key from the url in this popup window. These are in the URL parameters that look like (&id=YOUR_ID) and (&subscription_key=YOUR_KEY)
     2. In the Quick Start Project open the file SendMessageDialog. Replace this line with your values
     ```java
         ...
@@ -119,6 +119,7 @@ Clone this repo
 
 ### **6. Start a conversation**
 * **Windows**
+
     1. Open the Bot Framework Channel Emulator App and make sure your Bot URL is set to <http://localhost:3978/api/messages> and the App Id and App Password are blank
     Your emulator configuration should look like this:
 
@@ -130,32 +131,14 @@ Clone this repo
     /Path/To/BFEmulator/BotFrameworkEmulator-Console $ mono BFEmulator.exe  
     ```
 
->### **We now have our bot working on localhost. In the next few steps we will deploy our bot to Skype.**
+### Test your bot by asking it to send a message. Type something like "Tell John I'll be 5 minutes late for our meeting."
+### **We now have our bot working on localhost. In the next few steps we will connect our bot to Skype using ngrok.**
 
 
-# Publish to Skype
-### **1. First, we need to register our bot with the bot framework. Go to <https://dev.botframework.com/bots/new> to start registering your bot.**
+# Connecting to Skype
 
-### **2. Click the button that says Create Microsoft AppId and Password and follow the steps to create a new App Id and Password. Keep track of this password as we will need it for our project.**
-
-### **3. Next we need to add the newly generated Microsoft App Id and Microsoft Password to our project:**
-* **NodeJS**
-    1. Edit the .env file you created earlier. Add 2 new keys... set MICROSOFT_APP_ID to your new App Id and MICROSOFT_APP_PASSWORD to your new password. Your .env file should look something like the following:
-    ```
-    PORT = 3978
-    MICROSOFT_APP_ID = app_id_you_got_when_you_registered_your_bot
-    MICROSOFT_APP_PASSWORD = app_password_you_got_when_you_registered_your_bot
-    LUIS_MODEL = url_for_the_built-in_cortana_model_without_the_trailing_&q=
-    ```
-* **.NET**
-    1. Edit the Web.config file, set the value for key MicrosoftAppId to your newly generated App Id and the value for key MicrosoftAppPassword to the password you copied in the last step.
-
-    ![Edit Web.config](doc_images/5_add_botid_pass.PNG)
-
-### **4. Repeat step 5 of the last section to run your bot on localhost again**
-
-### **5. Bind the localhost deployment with ngrok.**
->### **Note:** In order to avoid deploying our bot to azure, we are using ngrok "deploy" our bot to an https endpoint
+### **1. With your app still running on localhost, bind the localhost deployment with ngrok. We will need this URL for registering our bot.**
+>### **Note:** For a production app we would deploy our bot to Azure, however we are using ngrok to make things quicker and easier for the tutorial. Once you bind the localhost port to ngrok, don't restart ngrok or your url will change.
 * **Windows** 
     1. Open the ngrok.exe program you installed in the Prerequisites. (Should open a command prompt window)
     2. Start ngrok on the port your bot is currently running on (The quick start project is running on port 3978): 
@@ -172,15 +155,32 @@ Clone this repo
 
 You should get something that looks like this. NGrok has created a new URL hosting your localhost deployment.
 
-![ngrok](doc_images/7_ngrok_view.PNG)  
+![ngrok](doc_images/7_ngrok_view.PNG) 
+### **2. Now it's time to register our bot with the bot framework. Go to <https://dev.botframework.com/bots/new> to start registering your bot.**
 
-### **6. Back in your browser we'll continue our bot registration. In the Configuration box, paste your ngrok url into the messaging endpoint followed by /api/messages.** 
+### **3. Click the button that says Create Microsoft AppId and Password and follow the steps to create a new App Id and Password. Keep track of this password as we will need it for our project.**
+
+### **4. Next we need to add the newly generated Microsoft App Id and Microsoft Password to our project:**
+* **NodeJS**
+    1. Edit the .env file you created earlier. Add 2 new keys... set MICROSOFT_APP_ID to your new App Id and MICROSOFT_APP_PASSWORD to your new password. Your .env file should look something like the following:
+    ```
+    PORT = 3978
+    MICROSOFT_APP_ID = app_id_you_got_when_you_registered_your_bot
+    MICROSOFT_APP_PASSWORD = app_password_you_got_when_you_registered_your_bot
+    LUIS_MODEL = url_for_the_built-in_cortana_model_without_the_trailing_&q=
+    ```
+* **.NET**
+    1. Edit the Web.config file, set the value for key MicrosoftAppId to your newly generated App Id and the value for key MicrosoftAppPassword to the password you copied in the last step.
+
+    ![Edit Web.config](doc_images/5_add_botid_pass.PNG) 
+
+### **5. In the Configuration box, paste the bottom https ngrok url from Step1 into the messaging endpoint followed by /api/messages.** 
 
 The Configuration box should look something like this with your own bot id and messaging endpoint from ngrok.
 
 ![Bot Configuration](doc_images/8_bot_configuration.PNG)
 
-### Fill out the rest of the information to register your bot, don't worry too much about this information, just fill in what's required.
+### Fill out the rest of the information to register your bot (you can put in any valid url for Privacy Statement and Terms of Use)
 ### **7. Click the Register Button to register your bot.** 
 
 ### **8. This should take you to a screen that looks something like this:**
@@ -190,8 +190,13 @@ The Configuration box should look something like this with your own bot id and m
 ### Just click add to skype and follow the steps to add your bot to skype.
 >### **Note:** If your bot doesn't show up in Skype after this step, make sure you have the newest version of the skype app downloaded
 
+### This step should open up the Skype Desktop app, test it one more time with the same query to make sure it's still working on the new Skype Channel. 
+### Use the same query as you did for running on localhost "Tell John I'll be 5 minutes late for our meeting"
+### Awesome! You've just connected an Intelligent Bot with your Skype account!
+
 # Where To Go From Here
 ### You now know how to setup a basic Bot with the Microsoft Bot Framework that can run on Skype
 ### For a deeper dive into the bot framework follow this tutorial which takes you through building a bot to manage Deliveries and Table Bookings at a restaurant.
 ### [Bot Framework Deep Dive Tutorial](https://github.com/Microsoft-DXEIP/Tokyo-Hack-Bot-NET-Deep-Dive.git)
+### Another great place to look for examples of bot usage are at <https://github.com/Microsoft/BotBuilder-Samples>. We encourage you to look through these samples to see what is possible with the Bot Framework.
 > ### **Note:** This tutorial requires Windows and Visual Studio as it uses the .NET SDK
