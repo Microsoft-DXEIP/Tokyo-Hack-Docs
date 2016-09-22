@@ -52,7 +52,6 @@
 
 # Creating a basic Bot
 
-## We have a little more setup before we can start writing code.
 ### **1. First, Download the Quickstart project for the SDK you will be working with.**
 
 ### If you're using NodeJS: 
@@ -98,7 +97,7 @@ Clone this repo
 * **.NET**: 
     1. Copy the id and subscription key from the url in this popup window . This should look like (&id=YOUR_ID) and (&subscription_key=YOUR_KEY)
     2. In the Quick Start Project open the file SendMessageDialog. Replace this line with your values
-    ```
+    ```java
         ...
         [LuisModel("YOUR_LUIS_APP_ID", "YOUR_LUIS_APP_KEY")]
         ...
