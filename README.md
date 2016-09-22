@@ -136,9 +136,10 @@ Clone this repo
 
 
 # Connecting to Skype
+>### **Note:** For a production app we would deploy our bot to Azure, however we are using ngrok to make things quicker and easier for the tutorial. Once you bind the localhost port to ngrok, don't restart ngrok or your url will change.
 
 ### **1. With your app still running on localhost, bind the localhost deployment with ngrok. We will need this URL for registering our bot.**
->### **Note:** For a production app we would deploy our bot to Azure, however we are using ngrok to make things quicker and easier for the tutorial. Once you bind the localhost port to ngrok, don't restart ngrok or your url will change.
+
 * **Windows** 
     1. Open the ngrok.exe program you installed in the Prerequisites. (Should open a command prompt window)
     2. Start ngrok on the port your bot is currently running on (The quick start project is running on port 3978): 
@@ -198,5 +199,6 @@ The Configuration box should look something like this with your own bot id and m
 ### You now know how to setup a basic Bot with the Microsoft Bot Framework that can run on Skype
 ### For a deeper dive into the bot framework follow this tutorial which takes you through building a bot to manage Deliveries and Table Bookings at a restaurant.
 ### [Bot Framework Deep Dive Tutorial](https://github.com/Microsoft-DXEIP/Tokyo-Hack-Bot-NET-Deep-Dive.git)
-### Another great place to look for examples of bot usage are at <https://github.com/Microsoft/BotBuilder-Samples>. We encourage you to look through these samples to see what is possible with the Bot Framework.
 > ### **Note:** This tutorial requires Windows and Visual Studio as it uses the .NET SDK
+
+### Another great place to dive deeper into the bot framework is <https://github.com/Microsoft/BotBuilder-Samples>. We encourage you to look through these samples to see what is possible with the Bot Framework.
