@@ -2,8 +2,12 @@
 
 ### The Microsoft Bot Framework provides a platform for you to build interactive conversational Bots. The Bots you build can support multiple end points, or channels. A channel is the way people will engage with the Bot you build. Examples of channels are Skype, SMS, Slack, Kik, and Facebook Messenger. 
 
-### INSERT INFO ON TUTORIAL
+### This tutorial is meant to get you started with a Bot in NodeJS or .NET quickly with the goal of publishing a bot that can understand how to Send Text Messages to Skype.
 
+> ### **Notes:**
+> 1. Some steps in this tutorial ask you to follow different steps depending on your operating system (Windows or macOS and Linux). If not specified, the step should work on either operating system. 
+> 2. Some steps are split into NodeJS and .NET. If this is the case, it means that your operating system doesn't matter.
+ 
 </br>
 
 # Prerequisites
