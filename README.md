@@ -125,7 +125,10 @@ Clone this repo
     ![Emulator Config](doc_images/emulator_config.PNG)
 
 * **macOS or Linux**
-    1. mono here
+    1. Navigate to where you downloaded the bot framework console emulator and run the BotEmulator.exe
+    ```
+    /Path/To/BFEmulator/BotFrameworkEmulator-Console $ mono BFEmulator.exe  
+    ```
 
 >### **We now have our bot working on localhost. In the next few steps we will deploy our bot to Skype.**
 
@@ -157,11 +160,15 @@ Clone this repo
     1. Open the ngrok.exe program you installed in the Prerequisites. (Should open a command prompt window)
     2. Start ngrok on the port your bot is currently running on (The quick start project is running on port 3978): 
     ```
-        ngrok.exe http 3978
+    /Path/To/Extracted/ngrok> ngrok.exe http 3978
     ```
 
 * **macOS or Linux**:
-    // figure out steps
+    1. Navigate to the folder you downloaded ngrok to.
+    2. Open a terminal and start ngrok on the port your bot is currently running on (The quick start project is running on port 3978):
+    ```
+    /Path/To/Extracted/ngrok $ ./ngrok http 3978
+    ```
 
 You should get something that looks like this. NGrok has created a new URL hosting your localhost deployment.
 
@@ -183,5 +190,8 @@ The Configuration box should look something like this with your own bot id and m
 ### Just click add to skype and follow the steps to add your bot to skype.
 >### **Note:** If your bot doesn't show up in Skype after this step, make sure you have the newest version of the skype app downloaded
 
-# Conclusion
+# Where To Go From Here
 ### You now know how to setup a basic Bot with the Microsoft Bot Framework that can run on Skype
+### For a deeper dive into the bot framework follow this tutorial which takes you through building a bot to manage Deliveries and Table Bookings at a restaurant.
+### [Bot Framework Deep Dive Tutorial](https://github.com/Microsoft-DXEIP/Tokyo-Hack-Bot-NET-Deep-Dive.git)
+> ### **Note:** This tutorial requires Windows and Visual Studio as it uses the .NET SDK
