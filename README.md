@@ -125,6 +125,8 @@ Clone this repo
     1. mono here
 
 >### **We now have our bot working on localhost. In the next few steps we will deploy our bot to Skype.**
+
+
 # Publish to Skype
 ### **1. First, we need to register our bot with the bot framework. Go to <https://dev.botframework.com/bots/new> to start registering your bot.**
 
