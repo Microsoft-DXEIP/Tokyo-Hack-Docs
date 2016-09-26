@@ -199,6 +199,8 @@ You can still debug your bot using the Bot Framework Channel Emulator, but you'l
 
     /settings
 
+and following the instructions.
+
 # Where To Go From Here
 ### You now know how to setup a basic Bot with the Microsoft Bot Framework that can run on Skype
 ### For a deeper dive into the bot framework follow this tutorial which takes you through building a bot to manage Deliveries and Table Bookings at a restaurant.
