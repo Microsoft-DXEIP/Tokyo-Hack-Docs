@@ -94,7 +94,7 @@ Clone this repo
     2. In the Quick Start Project open the .env file and add the url for the key LUIS_MODEL
     ```
         PORT = 3978
-        LUIS_MODEL = url_for_the_built-in_cortana_model_without_the_trailing_&q=
+        LUIS_APP_MODEL = url_for_the_built-in_cortana_model_without_the_trailing_&q=
     ```
 
     
@@ -168,7 +168,7 @@ You should get something that looks like this. NGrok has created a new URL hosti
     PORT = 3978
     MICROSOFT_APP_ID = app_id_you_got_when_you_registered_your_bot
     MICROSOFT_APP_PASSWORD = app_password_you_got_when_you_registered_your_bot
-    LUIS_MODEL = url_for_the_built-in_cortana_model_without_the_trailing_&q=
+    LUIS_APP_MODEL = url_for_the_built-in_cortana_model_without_the_trailing_&q=
     ```
 * **.NET**
     1. Edit the Web.config file, set the value for key MicrosoftAppId to your newly generated App Id and the value for key MicrosoftAppPassword to the password you copied in the last step.
