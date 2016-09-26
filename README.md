@@ -195,6 +195,10 @@ The Configuration box should look something like this with your own bot id and m
 ### Use the same query as you did for running on localhost "Tell John I'll be 5 minutes late for our meeting"
 ### Awesome! You've just connected an Intelligent Bot with your Skype account!
 
+You can still debug your bot using the Bot Framework Channel Emulator, but you'll need to update the settings to include the appid and apppassword by typing
+
+    /settings
+
 # Where To Go From Here
 ### You now know how to setup a basic Bot with the Microsoft Bot Framework that can run on Skype
 ### For a deeper dive into the bot framework follow this tutorial which takes you through building a bot to manage Deliveries and Table Bookings at a restaurant.
