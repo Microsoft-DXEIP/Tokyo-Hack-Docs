@@ -84,7 +84,7 @@ Clone this repo
 ### [NodeJS Repsitory](https://github.com/Microsoft-DXEIP/bot-quickstart-js) | [.NET Repository](https://github.com/Microsoft-DXEIP/bot-quickstart-NET)
 
 
-### **2. In your favorite browser, go to <https://luis.ai> and sign up for a new account.**
+### **2. In your favorite browser, go to <https://www.luis.ai> and sign up for a new account.**
 
 ### **3. After signing up, go to the My Applications Tab of the website and click on Cortana Pre-Built Application and choose a language to continue with.** 
 
