@@ -13,7 +13,7 @@
 # Prerequisites
 
 1. Install Git: Go to <https://git-scm.com/downloads> and download the installer for your Operating System. Follow the steps to install git. 
-2. We'll need some Bot Framework specific tools. In your browser navigate to <https://docs.botframework/en-us/downloads>. This page has links and instructions for the tools we need to build our bot. </br> We will refer to this page as the **docs** from now on.
+2. We'll need some Bot Framework specific tools. In your browser navigate to <https://docs.botframework.com/downloads>. This page has links and instructions for the tools we need to build our bot. </br> We will refer to this page as the **docs** from now on.
 3. First, we need a way to test our bot. From the docs install the bot framework for your Operating System.
     
     * **Windows**:
@@ -196,9 +196,14 @@ The Configuration box should look something like this with your own bot id and m
 ### Awesome! You've just connected an Intelligent Bot with your Skype account!
 
 You can still debug your bot using the Bot Framework Channel Emulator, but you'll need to update the settings to include the appid and apppassword by typing
-
+* **Windows**
+    1. Change your emulator settings to your nrgok info and new MICROSOFT_APP_ID, MICROSOFT_APP_PASSWORD
+    ![New Emulator Settings](doc_images/update_emulator.PNG)
+* **macOS or Linux**
+    1. Run mono to open the BFEmulator.exe file you downloaded and change the emulator settings with the command:
+```
     /settings
-
+```
 and following the instructions.
 
 # Where To Go From Here
