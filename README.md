@@ -144,7 +144,7 @@ Clone this repo
     1. Open the ngrok.exe program you installed in the Prerequisites. (Should open a command prompt window)
     2. Start ngrok on the port your bot is currently running on (The quick start project is running on port 3978): 
     ```
-    /Path/To/Extracted/ngrok> ngrok.exe http 3978
+    /Path/To/Extracted/ngrok> ngrok.exe http 3978 -host-header=localhost:3978
     ```
 
 * **macOS or Linux**:
